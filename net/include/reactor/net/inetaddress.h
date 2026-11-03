@@ -1,0 +1,22 @@
+
+#pragma once
+
+#include <cstdint>
+#include <netinet/in.h>
+#include <string>
+
+class InetAddress {
+public:
+  InetAddress(uint16_t port, bool loopbackOnly = false);
+  InetAddress(sockaddr_in const &addr) : addr_(addr) {}
+
+  sockaddr_in const *getSockAddr() const { return &addr_; }
+  void setSocketAddr(sockaddr_in const &addr) { addr_ = addr; }
+
+  uint16_t port() const;
+  std::string toIp() const;
+  std::string toIpPort() const;
+
+private:
+  sockaddr_in addr_;
+};
