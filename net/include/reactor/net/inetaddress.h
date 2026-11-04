@@ -7,9 +7,12 @@
 
 class InetAddress {
 public:
+  // listenAddr
   InetAddress(uint16_t port, bool loopbackOnly = false);
+  // peerAddr
   InetAddress(sockaddr_in const &addr) : addr_(addr) {}
 
+  // bind
   sockaddr_in const *getSockAddr() const { return &addr_; }
   void setSocketAddr(sockaddr_in const &addr) { addr_ = addr; }
 

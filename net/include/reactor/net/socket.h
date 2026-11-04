@@ -16,9 +16,9 @@ public:
   void setNonBlocking(bool on);
   void setReusePort(bool on);
   void setReuseAddr(bool on);
+
   void bind(sockaddr_in const &addr);
   void listen();
-
   int accept(sockaddr_in *peerAddr);
 
   static int createNonblocking();

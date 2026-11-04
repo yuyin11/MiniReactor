@@ -50,7 +50,7 @@ void Socket::listen() {
 int Socket::accept(sockaddr_in *peerAddr) {
   sockaddr_in addr;
   socklen_t len = sizeof(addr);
-  std::memset(&addr, 0, sizeof(0));
+  std::memset(&addr, 0, sizeof(addr));
 
   int connfd = ::accept4(fd_, reinterpret_cast<sockaddr *>(&addr), &len,
                          SOCK_NONBLOCK | SOCK_CLOEXEC);
