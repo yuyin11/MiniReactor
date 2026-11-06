@@ -1,2 +1,0 @@
-/usr/bin/ar qc libreactor_net.a CMakeFiles/reactor_net.dir/src/acceptor.cpp.o CMakeFiles/reactor_net.dir/src/buffer.cpp.o CMakeFiles/reactor_net.dir/src/channel.cpp.o CMakeFiles/reactor_net.dir/src/eventloop.cpp.o CMakeFiles/reactor_net.dir/src/inetaddress.cpp.o CMakeFiles/reactor_net.dir/src/socket.cpp.o CMakeFiles/reactor_net.dir/src/tcpconnection.cpp.o CMakeFiles/reactor_net.dir/src/tcpserver.cpp.o CMakeFiles/reactor_net.dir/src/epollpoller.cpp.o
-/usr/bin/ranlib libreactor_net.a
