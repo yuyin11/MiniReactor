@@ -7,8 +7,7 @@
 #include <cstdio>
 #include <memory>
 
-using namespace reactor;
-
+namespace reactor::net {
 TcpServer::TcpServer(EventLoop *loop, InetAddress const &listenAddr,
                      bool reusePort)
     : loop_(loop), acceptor_(loop, listenAddr, reusePort) {
@@ -54,3 +53,5 @@ void TcpServer::removeConnection(const TcpConnectionPtr &conn) {
   fprintf(stderr, "[TcpServer] remove connection fd=%d\n", fd);
   connections_.erase(fd);
 }
+
+} // namespace reactor::net

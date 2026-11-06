@@ -8,7 +8,7 @@
 #include <map>
 #include <memory>
 
-namespace reactor {
+namespace reactor::net {
 class TcpServer {
 public:
   using TcpConnectionPtr = std::shared_ptr<TcpConnection>;
@@ -38,4 +38,4 @@ private:
   MessageCallback messageCallback_;
 };
 
-} // namespace reactor
+} // namespace reactor::net

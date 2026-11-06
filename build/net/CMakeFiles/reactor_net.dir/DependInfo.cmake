@@ -11,6 +11,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/Ian/projects/ReactorNetworkLibrary/MiniReactor/net/src/acceptor.cpp" "net/CMakeFiles/reactor_net.dir/src/acceptor.cpp.o" "gcc" "net/CMakeFiles/reactor_net.dir/src/acceptor.cpp.o.d"
   "/home/Ian/projects/ReactorNetworkLibrary/MiniReactor/net/src/buffer.cpp" "net/CMakeFiles/reactor_net.dir/src/buffer.cpp.o" "gcc" "net/CMakeFiles/reactor_net.dir/src/buffer.cpp.o.d"
   "/home/Ian/projects/ReactorNetworkLibrary/MiniReactor/net/src/channel.cpp" "net/CMakeFiles/reactor_net.dir/src/channel.cpp.o" "gcc" "net/CMakeFiles/reactor_net.dir/src/channel.cpp.o.d"
+  "/home/Ian/projects/ReactorNetworkLibrary/MiniReactor/net/src/epollpoller.cpp" "net/CMakeFiles/reactor_net.dir/src/epollpoller.cpp.o" "gcc" "net/CMakeFiles/reactor_net.dir/src/epollpoller.cpp.o.d"
   "/home/Ian/projects/ReactorNetworkLibrary/MiniReactor/net/src/eventloop.cpp" "net/CMakeFiles/reactor_net.dir/src/eventloop.cpp.o" "gcc" "net/CMakeFiles/reactor_net.dir/src/eventloop.cpp.o.d"
   "/home/Ian/projects/ReactorNetworkLibrary/MiniReactor/net/src/inetaddress.cpp" "net/CMakeFiles/reactor_net.dir/src/inetaddress.cpp.o" "gcc" "net/CMakeFiles/reactor_net.dir/src/inetaddress.cpp.o.d"
   "/home/Ian/projects/ReactorNetworkLibrary/MiniReactor/net/src/socket.cpp" "net/CMakeFiles/reactor_net.dir/src/socket.cpp.o" "gcc" "net/CMakeFiles/reactor_net.dir/src/socket.cpp.o.d"

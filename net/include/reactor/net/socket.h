@@ -3,7 +3,7 @@
 
 #include <netinet/in.h>
 
-namespace reactor {
+namespace reactor::net {
 class Socket {
 public:
   Socket(int fd) : fd_(fd) {}
@@ -28,4 +28,4 @@ private:
   int fd_;
 };
 
-} // namespace reactor
+} // namespace reactor::net

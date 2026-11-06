@@ -8,8 +8,7 @@
 #include <sys/socket.h>
 #include <unistd.h>
 
-using namespace reactor;
-
+namespace reactor::net {
 TcpConnection::TcpConnection(EventLoop *loop, int connfd,
                              InetAddress const &peerAddr)
     : loop_(loop), socket_(connfd), channel_(loop, connfd), peerAddr_(peerAddr),
@@ -138,3 +137,5 @@ void TcpConnection::handleError() {
           strerror(errno));
   handleClose();
 }
+
+} // namespace reactor::net

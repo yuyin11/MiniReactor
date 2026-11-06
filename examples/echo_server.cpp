@@ -5,9 +5,8 @@
 #include <cstdio>
 #include <string>
 
-using namespace reactor;
-
 int main() {
+  using namespace reactor::net;
   EventLoop loop;
   InetAddress listenAddr(8888);
   TcpServer server(&loop, listenAddr);

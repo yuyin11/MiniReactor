@@ -5,7 +5,7 @@
 #include <netinet/in.h>
 #include <string>
 
-namespace reactor {
+namespace reactor::net {
 class InetAddress {
 public:
   // listenAddr
@@ -25,4 +25,4 @@ private:
   sockaddr_in addr_;
 };
 
-} // namespace reactor
+} // namespace reactor::net

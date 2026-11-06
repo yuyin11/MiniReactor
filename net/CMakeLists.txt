@@ -8,6 +8,7 @@ add_library(reactor_net STATIC
   src/socket.cpp
   src/tcpconnection.cpp
   src/tcpserver.cpp
+  src/epollpoller.cpp
 )
 
 target_include_directories(reactor_net

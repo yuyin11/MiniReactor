@@ -3,8 +3,7 @@
 #include "reactor/net/eventloop.h"
 #include <unistd.h>
 
-using namespace reactor;
-
+namespace reactor::net {
 Acceptor::Acceptor(EventLoop *loop, const InetAddress &listenAddr,
                    bool reusePort)
     : loop_(loop), acceptSocket_(Socket::createNonblocking()),
@@ -41,3 +40,5 @@ void Acceptor::handleRead() {
     }
   }
 }
+
+} // namespace reactor::net

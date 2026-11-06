@@ -184,6 +184,20 @@ net/CMakeFiles/reactor_net.dir/src/tcpserver.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/reactor_net.dir/src/tcpserver.cpp.s"
 	cd /home/Ian/projects/ReactorNetworkLibrary/MiniReactor/build/net && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/Ian/projects/ReactorNetworkLibrary/MiniReactor/net/src/tcpserver.cpp -o CMakeFiles/reactor_net.dir/src/tcpserver.cpp.s
 
+net/CMakeFiles/reactor_net.dir/src/epollpoller.cpp.o: net/CMakeFiles/reactor_net.dir/flags.make
+net/CMakeFiles/reactor_net.dir/src/epollpoller.cpp.o: /home/Ian/projects/ReactorNetworkLibrary/MiniReactor/net/src/epollpoller.cpp
+net/CMakeFiles/reactor_net.dir/src/epollpoller.cpp.o: net/CMakeFiles/reactor_net.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/Ian/projects/ReactorNetworkLibrary/MiniReactor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object net/CMakeFiles/reactor_net.dir/src/epollpoller.cpp.o"
+	cd /home/Ian/projects/ReactorNetworkLibrary/MiniReactor/build/net && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT net/CMakeFiles/reactor_net.dir/src/epollpoller.cpp.o -MF CMakeFiles/reactor_net.dir/src/epollpoller.cpp.o.d -o CMakeFiles/reactor_net.dir/src/epollpoller.cpp.o -c /home/Ian/projects/ReactorNetworkLibrary/MiniReactor/net/src/epollpoller.cpp
+
+net/CMakeFiles/reactor_net.dir/src/epollpoller.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/reactor_net.dir/src/epollpoller.cpp.i"
+	cd /home/Ian/projects/ReactorNetworkLibrary/MiniReactor/build/net && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/Ian/projects/ReactorNetworkLibrary/MiniReactor/net/src/epollpoller.cpp > CMakeFiles/reactor_net.dir/src/epollpoller.cpp.i
+
+net/CMakeFiles/reactor_net.dir/src/epollpoller.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/reactor_net.dir/src/epollpoller.cpp.s"
+	cd /home/Ian/projects/ReactorNetworkLibrary/MiniReactor/build/net && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/Ian/projects/ReactorNetworkLibrary/MiniReactor/net/src/epollpoller.cpp -o CMakeFiles/reactor_net.dir/src/epollpoller.cpp.s
+
 # Object files for target reactor_net
 reactor_net_OBJECTS = \
 "CMakeFiles/reactor_net.dir/src/acceptor.cpp.o" \
@@ -193,7 +207,8 @@ reactor_net_OBJECTS = \
 "CMakeFiles/reactor_net.dir/src/inetaddress.cpp.o" \
 "CMakeFiles/reactor_net.dir/src/socket.cpp.o" \
 "CMakeFiles/reactor_net.dir/src/tcpconnection.cpp.o" \
-"CMakeFiles/reactor_net.dir/src/tcpserver.cpp.o"
+"CMakeFiles/reactor_net.dir/src/tcpserver.cpp.o" \
+"CMakeFiles/reactor_net.dir/src/epollpoller.cpp.o"
 
 # External object files for target reactor_net
 reactor_net_EXTERNAL_OBJECTS =
@@ -206,9 +221,10 @@ net/libreactor_net.a: net/CMakeFiles/reactor_net.dir/src/inetaddress.cpp.o
 net/libreactor_net.a: net/CMakeFiles/reactor_net.dir/src/socket.cpp.o
 net/libreactor_net.a: net/CMakeFiles/reactor_net.dir/src/tcpconnection.cpp.o
 net/libreactor_net.a: net/CMakeFiles/reactor_net.dir/src/tcpserver.cpp.o
+net/libreactor_net.a: net/CMakeFiles/reactor_net.dir/src/epollpoller.cpp.o
 net/libreactor_net.a: net/CMakeFiles/reactor_net.dir/build.make
 net/libreactor_net.a: net/CMakeFiles/reactor_net.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/Ian/projects/ReactorNetworkLibrary/MiniReactor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX static library libreactor_net.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/Ian/projects/ReactorNetworkLibrary/MiniReactor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking CXX static library libreactor_net.a"
 	cd /home/Ian/projects/ReactorNetworkLibrary/MiniReactor/build/net && $(CMAKE_COMMAND) -P CMakeFiles/reactor_net.dir/cmake_clean_target.cmake
 	cd /home/Ian/projects/ReactorNetworkLibrary/MiniReactor/build/net && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/reactor_net.dir/link.txt --verbose=$(VERBOSE)
 

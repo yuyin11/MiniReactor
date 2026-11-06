@@ -1,14 +1,14 @@
 
 #pragma once
 
-#include "eventloop.h"
-
 #include <cstdint>
 #include <functional>
 #include <memory>
 #include <sys/epoll.h>
 
-namespace reactor {
+namespace reactor::net {
+class EventLoop;
+
 class Channel {
 public:
   Channel(EventLoop *loop, int fd);
@@ -71,4 +71,4 @@ private:
   std::function<void()> errorCallback_;
 };
 
-} // namespace reactor
+} // namespace reactor::net

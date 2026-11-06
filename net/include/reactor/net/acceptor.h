@@ -8,7 +8,7 @@
 
 #include <functional>
 
-namespace reactor {
+namespace reactor::net {
 class Acceptor {
 public:
   using NewConnectionCallback =
@@ -36,4 +36,4 @@ private:
   NewConnectionCallback newConnectionCallback_;
 };
 
-} // namespace reactor
+} // namespace reactor::net

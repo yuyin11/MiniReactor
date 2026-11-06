@@ -1,10 +1,11 @@
 
 #include "reactor/net/channel.h"
+#include "reactor/net/eventloop.h"
+
 #include <memory>
 #include <sys/epoll.h>
 
-using namespace reactor;
-
+namespace reactor::net {
 Channel::Channel(EventLoop *loop, int fd) : loop_(loop), fd_(fd) {}
 
 Channel::~Channel() = default;
@@ -68,3 +69,5 @@ void Channel::handleEventWithGuard() {
       writeCallback_();
   }
 }
+
+} // namespace reactor::net

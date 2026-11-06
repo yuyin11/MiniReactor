@@ -1,17 +1,24 @@
 
 #pragma once
 
-#include <map>
+#include "poller.h"
+
+#include <memory>
 #include <sys/epoll.h>
 #include <vector>
 
-namespace reactor {
+namespace reactor::net {
 class Channel;
 
 class EventLoop {
 public:
+  using ChannelList = std::vector<Channel *>;
+
   EventLoop();
   ~EventLoop();
+
+  EventLoop(EventLoop const &) = delete;
+  EventLoop operator=(EventLoop const &) = delete;
 
   void loop();
   void quit() { quit_ = true; }
@@ -20,11 +27,13 @@ public:
   void removeChannel(Channel *);
 
 private:
-  int epollfd_;
+  std::unique_ptr<Poller> poller_;
+  ChannelList activeChannels_;
   bool quit_{false};
 
-  std::vector<epoll_event> events_;
-  std::map<int, Channel *> channels_;
+  // int epollfd_;
+  // std::vector<epoll_event> events_;
+  // std::map<int, Channel *> channels_;
 };
 
-} // namespace reactor
+} // namespace reactor::net

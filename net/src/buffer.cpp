@@ -5,8 +5,7 @@
 #include <sys/types.h>
 #include <sys/uio.h>
 
-using namespace reactor;
-
+namespace reactor::net {
 Buffer::Buffer(size_t initialSize)
     : buffer_(initialSize), readerIndex_(kCheapPrepend),
       writerIndex_(kCheapPrepend) {}
@@ -82,3 +81,5 @@ void Buffer::makeSpace(size_t len) {
     writerIndex_ = readerIndex_ + readable;
   }
 }
+
+} // namespace reactor::net

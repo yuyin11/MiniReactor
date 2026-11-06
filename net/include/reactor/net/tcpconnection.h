@@ -11,7 +11,7 @@
 #include <memory>
 #include <string>
 
-namespace reactor {
+namespace reactor::net {
 class TcpConnection : public std::enable_shared_from_this<TcpConnection> {
 public:
   using TcpConnectionPtr = std::shared_ptr<TcpConnection>;
@@ -63,4 +63,4 @@ private:
   WriteCompleteCallback writeCompleteCallback_;
 };
 
-} // namespace reactor
+} // namespace reactor::net

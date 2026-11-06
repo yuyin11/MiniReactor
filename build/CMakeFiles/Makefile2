@@ -150,12 +150,12 @@ tests/clean:
 net/CMakeFiles/reactor_net.dir/all:
 	$(MAKE) $(MAKESILENT) -f net/CMakeFiles/reactor_net.dir/build.make net/CMakeFiles/reactor_net.dir/depend
 	$(MAKE) $(MAKESILENT) -f net/CMakeFiles/reactor_net.dir/build.make net/CMakeFiles/reactor_net.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/Ian/projects/ReactorNetworkLibrary/MiniReactor/build/CMakeFiles --progress-num=3,4,5,6,7,8,9,10,11 "Built target reactor_net"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/Ian/projects/ReactorNetworkLibrary/MiniReactor/build/CMakeFiles --progress-num=3,4,5,6,7,8,9,10,11,12 "Built target reactor_net"
 .PHONY : net/CMakeFiles/reactor_net.dir/all
 
 # Build rule for subdir invocation for target.
 net/CMakeFiles/reactor_net.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/Ian/projects/ReactorNetworkLibrary/MiniReactor/build/CMakeFiles 9
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/Ian/projects/ReactorNetworkLibrary/MiniReactor/build/CMakeFiles 10
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 net/CMakeFiles/reactor_net.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/Ian/projects/ReactorNetworkLibrary/MiniReactor/build/CMakeFiles 0
 .PHONY : net/CMakeFiles/reactor_net.dir/rule
@@ -167,7 +167,7 @@ reactor_net: net/CMakeFiles/reactor_net.dir/rule
 # codegen rule for target.
 net/CMakeFiles/reactor_net.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f net/CMakeFiles/reactor_net.dir/build.make net/CMakeFiles/reactor_net.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/Ian/projects/ReactorNetworkLibrary/MiniReactor/build/CMakeFiles --progress-num=3,4,5,6,7,8,9,10,11 "Finished codegen for target reactor_net"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/Ian/projects/ReactorNetworkLibrary/MiniReactor/build/CMakeFiles --progress-num=3,4,5,6,7,8,9,10,11,12 "Finished codegen for target reactor_net"
 .PHONY : net/CMakeFiles/reactor_net.dir/codegen
 
 # clean rule for target.
@@ -187,7 +187,7 @@ examples/CMakeFiles/echo_server.dir/all: net/CMakeFiles/reactor_net.dir/all
 
 # Build rule for subdir invocation for target.
 examples/CMakeFiles/echo_server.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/Ian/projects/ReactorNetworkLibrary/MiniReactor/build/CMakeFiles 11
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/Ian/projects/ReactorNetworkLibrary/MiniReactor/build/CMakeFiles 12
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/CMakeFiles/echo_server.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/Ian/projects/ReactorNetworkLibrary/MiniReactor/build/CMakeFiles 0
 .PHONY : examples/CMakeFiles/echo_server.dir/rule

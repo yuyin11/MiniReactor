@@ -212,6 +212,30 @@ src/channel.cpp.s:
 	cd /home/Ian/projects/ReactorNetworkLibrary/MiniReactor/build && $(MAKE) $(MAKESILENT) -f net/CMakeFiles/reactor_net.dir/build.make net/CMakeFiles/reactor_net.dir/src/channel.cpp.s
 .PHONY : src/channel.cpp.s
 
+src/epollpoller.o: src/epollpoller.cpp.o
+.PHONY : src/epollpoller.o
+
+# target to build an object file
+src/epollpoller.cpp.o:
+	cd /home/Ian/projects/ReactorNetworkLibrary/MiniReactor/build && $(MAKE) $(MAKESILENT) -f net/CMakeFiles/reactor_net.dir/build.make net/CMakeFiles/reactor_net.dir/src/epollpoller.cpp.o
+.PHONY : src/epollpoller.cpp.o
+
+src/epollpoller.i: src/epollpoller.cpp.i
+.PHONY : src/epollpoller.i
+
+# target to preprocess a source file
+src/epollpoller.cpp.i:
+	cd /home/Ian/projects/ReactorNetworkLibrary/MiniReactor/build && $(MAKE) $(MAKESILENT) -f net/CMakeFiles/reactor_net.dir/build.make net/CMakeFiles/reactor_net.dir/src/epollpoller.cpp.i
+.PHONY : src/epollpoller.cpp.i
+
+src/epollpoller.s: src/epollpoller.cpp.s
+.PHONY : src/epollpoller.s
+
+# target to generate assembly for a file
+src/epollpoller.cpp.s:
+	cd /home/Ian/projects/ReactorNetworkLibrary/MiniReactor/build && $(MAKE) $(MAKESILENT) -f net/CMakeFiles/reactor_net.dir/build.make net/CMakeFiles/reactor_net.dir/src/epollpoller.cpp.s
+.PHONY : src/epollpoller.cpp.s
+
 src/eventloop.o: src/eventloop.cpp.o
 .PHONY : src/eventloop.o
 
@@ -351,6 +375,9 @@ help:
 	@echo "... src/channel.o"
 	@echo "... src/channel.i"
 	@echo "... src/channel.s"
+	@echo "... src/epollpoller.o"
+	@echo "... src/epollpoller.i"
+	@echo "... src/epollpoller.s"
 	@echo "... src/eventloop.o"
 	@echo "... src/eventloop.i"
 	@echo "... src/eventloop.s"

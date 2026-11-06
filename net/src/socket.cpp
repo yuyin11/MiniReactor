@@ -10,8 +10,7 @@
 #include <sys/socket.h>
 #include <unistd.h>
 
-using namespace reactor;
-
+namespace reactor::net {
 Socket::~Socket() {
   if (fd_ >= 0)
     ::close(fd_);
@@ -72,3 +71,5 @@ int Socket::createNonblocking() {
   assert(fd >= 0);
   return fd;
 }
+
+} // namespace reactor::net

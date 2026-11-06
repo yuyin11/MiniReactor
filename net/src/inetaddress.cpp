@@ -5,8 +5,7 @@
 #include <netinet/in.h>
 #include <string>
 
-using namespace reactor;
-
+namespace reactor::net {
 InetAddress::InetAddress(uint16_t port, bool loopbackOnly) {
   addr_.sin_family = AF_INET;
   addr_.sin_port = htons(port);
@@ -25,3 +24,5 @@ std::string InetAddress::toIp() const {
 std::string InetAddress::toIpPort() const {
   return toIp() + ":" + std::to_string(port());
 }
+
+} // namespace reactor::net
