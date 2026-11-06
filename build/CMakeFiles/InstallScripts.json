@@ -1,0 +1,10 @@
+{
+	"InstallScripts" : 
+	[
+		"/home/Ian/projects/ReactorNetworkLibrary/MiniReactor/build/cmake_install.cmake",
+		"/home/Ian/projects/ReactorNetworkLibrary/MiniReactor/build/net/cmake_install.cmake",
+		"/home/Ian/projects/ReactorNetworkLibrary/MiniReactor/build/examples/cmake_install.cmake",
+		"/home/Ian/projects/ReactorNetworkLibrary/MiniReactor/build/tests/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

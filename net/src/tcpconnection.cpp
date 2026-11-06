@@ -1,12 +1,14 @@
 
-#include "../include/reactor/net/tcpconnection.h"
-#include "../include/reactor/net/eventloop.h"
+#include "reactor/net/tcpconnection.h"
+#include "reactor/net/eventloop.h"
 
 #include <cerrno>
 #include <cstdio>
 #include <cstring>
 #include <sys/socket.h>
 #include <unistd.h>
+
+using namespace reactor;
 
 TcpConnection::TcpConnection(EventLoop *loop, int connfd,
                              InetAddress const &peerAddr)

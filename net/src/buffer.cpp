@@ -1,9 +1,11 @@
 
-#include "../include/reactor/net/buffer.h"
+#include "reactor/net/buffer.h"
 #include <cstring>
 #include <string>
 #include <sys/types.h>
 #include <sys/uio.h>
+
+using namespace reactor;
 
 Buffer::Buffer(size_t initialSize)
     : buffer_(initialSize), readerIndex_(kCheapPrepend),

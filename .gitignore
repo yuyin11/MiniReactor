@@ -1,0 +1,35 @@
+
+# 构建产物
+build/
+cmake-build-*/
+*.o
+*.a
+*.so
+*.dylib
+*.dll
+*.exe
+
+# CMake
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+Makefile
+compile_commands.json
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# 日志和测试产物
+*.log
+log
+log.*
+
+# 系统
+.DS_Store
+Thumbs.db
+
+# 编译数据库
+.cache/

@@ -1,9 +1,11 @@
 
-#include "../include/reactor/net/eventloop.h"
-#include "../include/reactor/net/inetaddress.h"
-#include "../include/reactor/net/tcpserver.h"
+#include "reactor/net/eventloop.h"
+#include "reactor/net/inetaddress.h"
+#include "reactor/net/tcpserver.h"
 #include <cstdio>
 #include <string>
+
+using namespace reactor;
 
 int main() {
   EventLoop loop;

@@ -1,5 +1,5 @@
 
-#include "../include/reactor/net/socket.h"
+#include "reactor/net/socket.h"
 
 #include <asm-generic/socket.h>
 #include <cassert>
@@ -9,6 +9,8 @@
 #include <netinet/in.h>
 #include <sys/socket.h>
 #include <unistd.h>
+
+using namespace reactor;
 
 Socket::~Socket() {
   if (fd_ >= 0)

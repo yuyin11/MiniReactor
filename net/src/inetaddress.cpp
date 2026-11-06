@@ -1,9 +1,11 @@
 
-#include "../include/reactor/net/inetaddress.h"
+#include "reactor/net/inetaddress.h"
 
 #include <arpa/inet.h>
 #include <netinet/in.h>
 #include <string>
+
+using namespace reactor;
 
 InetAddress::InetAddress(uint16_t port, bool loopbackOnly) {
   addr_.sin_family = AF_INET;

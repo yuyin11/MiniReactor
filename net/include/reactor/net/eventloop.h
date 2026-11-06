@@ -5,6 +5,7 @@
 #include <sys/epoll.h>
 #include <vector>
 
+namespace reactor {
 class Channel;
 
 class EventLoop {
@@ -25,3 +26,5 @@ private:
   std::vector<epoll_event> events_;
   std::map<int, Channel *> channels_;
 };
+
+} // namespace reactor

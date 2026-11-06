@@ -1,7 +1,9 @@
 // Acceptor.cpp
-#include "../include/reactor/net/acceptor.h"
-#include "../include/reactor/net/eventloop.h"
+#include "reactor/net/acceptor.h"
+#include "reactor/net/eventloop.h"
 #include <unistd.h>
+
+using namespace reactor;
 
 Acceptor::Acceptor(EventLoop *loop, const InetAddress &listenAddr,
                    bool reusePort)

@@ -1,11 +1,13 @@
 
-#include "../include/reactor/net/eventloop.h"
-#include "../include/reactor/net/channel.h"
+#include "reactor/net/eventloop.h"
+#include "reactor/net/channel.h"
 
 #include <cerrno>
 #include <cstdio>
 #include <sys/epoll.h>
 #include <unistd.h>
+
+using namespace reactor;
 
 EventLoop::EventLoop() {
   epollfd_ = epoll_create1(EPOLL_CLOEXEC);

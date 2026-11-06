@@ -8,6 +8,7 @@
 #include <memory>
 #include <sys/epoll.h>
 
+namespace reactor {
 class Channel {
 public:
   Channel(EventLoop *loop, int fd);
@@ -69,3 +70,5 @@ private:
   std::function<void()> closeCallback_;
   std::function<void()> errorCallback_;
 };
+
+} // namespace reactor

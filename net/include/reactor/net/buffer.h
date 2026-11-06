@@ -6,6 +6,7 @@
 #include <sys/types.h>
 #include <vector>
 
+namespace reactor {
 class Buffer {
 public:
   static int const kCheapPrepend = 8;
@@ -42,3 +43,5 @@ private:
   size_t readerIndex_;
   size_t writerIndex_;
 };
+
+} // namespace reactor

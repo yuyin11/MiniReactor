@@ -1,7 +1,9 @@
 
-#include "../include/reactor/net/channel.h"
+#include "reactor/net/channel.h"
 #include <memory>
 #include <sys/epoll.h>
+
+using namespace reactor;
 
 Channel::Channel(EventLoop *loop, int fd) : loop_(loop), fd_(fd) {}
 
